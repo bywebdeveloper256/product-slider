@@ -1,0 +1,178 @@
+/**
+* CSS SLIDER
+**/  
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 330px;
+}
+  
+.slides {
+    /*width: 10000px;*/
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    cursor: pointer;
+}
+  
+.slides.transition {
+    transition: all 0.3s ease-in-out;
+}
+  
+.slide {
+    width: 200px;
+    height: 100%;
+    margin: 5px;
+    box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+}
+  
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f3f3f3;
+}
+  
+.next {
+    right: 0;
+}
+  
+.prev {
+    left: 0;
+}
+
+.prev:active,
+.next:active {
+    color: #888;
+}
+
+/**
+* CSS CARD
+**/
+.contentCard{
+  padding: 5px;
+}
+
+.contentSlider{
+  text-align: center;
+}
+
+.contentSlider img {
+  width: 100%;
+  height: 100%;
+}
+
+.contentSlider h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.contentSlider h6 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.offer{
+  font-weight: 600;
+  color: green;
+  margin-left: 10px;
+}
+
+a.btnProduct {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btnUpdate{
+  padding: 10px;
+  border-radius: 0;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: .5s;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.contentBtnSlider{
+  text-align: center;
+}
+
+button.btnUpdate:disabled {
+  background-color: rgb(153, 153, 153);
+}
+
+button.btnUpdate:disabled:hover {
+  background-color: rgb(153, 153, 153);
+  border: none;
+  color: #fff
+}
+
+/**
+* Spinner
+*/
+#rbPreloader{
+  position: absolute;
+  background-color: #ffffffc7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#rbPreloader p{
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+  border: 4px solid #6a6565;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #6a6565 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

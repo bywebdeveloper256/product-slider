@@ -1,0 +1,11 @@
+{
+    "name": "raulbarroso/producslider",
+    "autoload": {
+        "psr-4": {
+            "productSlider\\": "classes/"
+        },
+        "files": [
+            "inc/helpers.php"
+        ]
+    }
+}
